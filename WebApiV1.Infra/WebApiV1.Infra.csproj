@@ -47,10 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mappings\CustomerMap.cs" />
     <Compile Include="Context\TodoContext.cs" />
+    <Compile Include="Mappings\TodoItemMap.cs" />
     <Compile Include="Migrations\201905181853118_V1.cs" />
     <Compile Include="Migrations\201905181853118_V1.Designer.cs">
       <DependentUpon>201905181853118_V1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905240151410_v2.cs" />
+    <Compile Include="Migrations\201905240151410_v2.Designer.cs">
+      <DependentUpon>201905240151410_v2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -64,6 +70,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905181853118_V1.resx">
       <DependentUpon>201905181853118_V1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905240151410_v2.resx">
+      <DependentUpon>201905240151410_v2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
